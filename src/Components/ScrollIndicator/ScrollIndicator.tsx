@@ -7,7 +7,9 @@ const ScrollIndicator = () => {
 
   return (
     <div className="w-screen h-fit">
-      <Navbar/>
+      <div className="font-bold text-5xl flex justify-center items-center bg-stone-600 text-white h-64">
+           <span >SEE SCROLL INDICATOR AT TOP</span>
+      </div>
 
       <div>
         <div className="w-full h-56 bg-blue-500"></div>

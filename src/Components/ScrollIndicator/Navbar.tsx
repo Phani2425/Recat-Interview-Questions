@@ -5,7 +5,7 @@ function Navbar() {
     const scrollPercentage = UseScrollIndicator();
 
   return (
-    <div className="h-14 w-full sticky top-0 flex justify-between items-center px-11 py-3 bg-white">
+    <div className="h-14 w-full sticky top-0 flex justify-between items-center px-11 py-3 bg-white z-50">
       <div className="flex gap-3 items-center">
         <div className="h-4 w-4 rounded-full bg-yellow-500"></div>
         <div className="h-4 w-4 rounded-full bg-red-500"></div>
