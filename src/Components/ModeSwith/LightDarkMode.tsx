@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const LightDarkMode = () => {
   const [theme, settheme] = useState(localStorage.getItem("theme") || "light");
 
   const clickHandler = () => {
     settheme(theme === "light" ? "dark" : "light");
-    localStorage.setItem("theme", theme);
   };
+
+  useEffect(()=> {
+    localStorage.setItem("theme", theme);
+  },[theme])
 
   return (
     <div
