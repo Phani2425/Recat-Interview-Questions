@@ -11,6 +11,8 @@ import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator";
 import Navbar from "./Components/ScrollIndicator/Navbar";
 import HomeForModal from "./Components/Modal/HomeForModal";
 import GitFInder from "./Components/GitHubProfileFinder/GitFInder";
+import AutoComplete from "./Components/SearchAutoComplete/AutoComplete";
+import TicTacToe from "./Components/Tic Tac Toe/TicTacToe";
 
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
       <ScrollIndicator/>
       <HomeForModal/>
       <GitFInder/>
+      <AutoComplete/>
+      <TicTacToe/>
     </div>
   )
 }
