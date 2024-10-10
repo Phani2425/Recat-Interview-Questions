@@ -13,6 +13,10 @@ import HomeForModal from "./Components/Modal/HomeForModal";
 import GitFInder from "./Components/GitHubProfileFinder/GitFInder";
 import AutoComplete from "./Components/SearchAutoComplete/AutoComplete";
 import TicTacToe from "./Components/Tic Tac Toe/TicTacToe";
+import OutSideClick from "./Components/CustomHooks/OutSideClick/OutSideClick";
+import WindowResize from "./Components/CustomHooks/WindowResize/WindowResize";
+import Scroll from "./Components/ScrollToTop&Buttom/Scroll";
+import ScrollTOSection from "./Components/ScrollToPerticularSection/ScrollTOSection";
 
 
 const App = () => {
@@ -32,6 +36,10 @@ const App = () => {
       <GitFInder/>
       <AutoComplete/>
       <TicTacToe/>
+      <OutSideClick/>
+      <WindowResize/>
+      <Scroll/>
+      <ScrollTOSection/>
     </div>
   )
 }

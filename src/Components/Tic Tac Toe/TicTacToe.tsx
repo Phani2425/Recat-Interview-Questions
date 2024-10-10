@@ -167,7 +167,7 @@ const TicTacToe = () => {
           ? `${winner} won the match`
           : `${
               matchDraw
-                ? "match draw"
+                ? "match draw!! Please restart the game..."
                 : `Current Player is ${currentPlayer ? "X" : "0"}`
             }`
       }`}</span>
