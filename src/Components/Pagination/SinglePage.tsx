@@ -9,7 +9,6 @@ interface props {
 }
 
 const SinglePage: React.FC<props> = ({pageData}) => {
-  console.log(pageData);
   return (
     <div className= 'w-[40%] flex flex-wrap gap-2'>
        {

@@ -19,6 +19,7 @@ import Scroll from "./Components/ScrollToTop&Buttom/Scroll";
 import ScrollTOSection from "./Components/ScrollToPerticularSection/ScrollTOSection";
 import Pagination from "./Components/Pagination";
 import Digitalclock from "./Components/Digital Clock/Digitalclock";
+import CountDown from "./Components/CountDown/CountDown";
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
       {/* Advanced Questions */}
       <Pagination/>
       <Digitalclock/>
+      <CountDown/>
     </div>
   )
 }

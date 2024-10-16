@@ -23,7 +23,6 @@ const AutoComplete = () => {
     axios
       .get("https://dummyjson.com/users?limit=208")
       .then((result) => {
-        console.log(result.data.users);
         setusers(result.data.users);
       })
       .catch((err) => console.log(err.message));
