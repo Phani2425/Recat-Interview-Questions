@@ -17,6 +17,8 @@ import OutSideClick from "./Components/CustomHooks/OutSideClick/OutSideClick";
 import WindowResize from "./Components/CustomHooks/WindowResize/WindowResize";
 import Scroll from "./Components/ScrollToTop&Buttom/Scroll";
 import ScrollTOSection from "./Components/ScrollToPerticularSection/ScrollTOSection";
+import Pagination from "./Components/Pagination";
+import Digitalclock from "./Components/Digital Clock/Digitalclock";
 
 
 const App = () => {
@@ -40,6 +42,10 @@ const App = () => {
       <WindowResize/>
       <Scroll/>
       <ScrollTOSection/>
+
+      {/* Advanced Questions */}
+      <Pagination/>
+      <Digitalclock/>
     </div>
   )
 }
