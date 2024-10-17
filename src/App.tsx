@@ -22,6 +22,7 @@ import Digitalclock from "./Components/Digital Clock/Digitalclock";
 import CountDown from "./Components/CountDown/CountDown";
 import MusicPlayer from "./Components/MusicPlayer/MusicPlayer";
 import ButtonRipple from "./Components/ButtonRippleEffect/ButtonRipple";
+import DragandDrop from "./Components/DragAndDrop/DragandDrop";
 
 
 const App = () => {
@@ -52,6 +53,7 @@ const App = () => {
       <CountDown/>
       <MusicPlayer/>
       <ButtonRipple/>
+      <DragandDrop/>
     </div>
   )
 }
