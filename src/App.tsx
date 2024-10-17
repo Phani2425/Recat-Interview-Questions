@@ -23,6 +23,8 @@ import CountDown from "./Components/CountDown/CountDown";
 import MusicPlayer from "./Components/MusicPlayer/MusicPlayer";
 import ButtonRipple from "./Components/ButtonRippleEffect/ButtonRipple";
 import DragandDrop from "./Components/DragAndDrop/DragandDrop";
+import FormValidation from "./Components/SimpleFormValidation/FormValidation";
+import Quiz from "./Components/Quiz App/Quiz";
 
 
 const App = () => {
@@ -54,6 +56,8 @@ const App = () => {
       <MusicPlayer/>
       <ButtonRipple/>
       <DragandDrop/>
+      <FormValidation/>
+      <Quiz/>
     </div>
   )
 }
