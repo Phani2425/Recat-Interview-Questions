@@ -25,6 +25,8 @@ import ButtonRipple from "./Components/ButtonRippleEffect/ButtonRipple";
 import DragandDrop from "./Components/DragAndDrop/DragandDrop";
 import FormValidation from "./Components/SimpleFormValidation/FormValidation";
 import Quiz from "./Components/Quiz App/Quiz";
+import CurrencyConverter from "./Components/CurrencyConverter/CurrencyConverter";
+import FilterProducts from "./Components/FilterProducts/FilterProducts";
 
 
 const App = () => {
@@ -58,6 +60,8 @@ const App = () => {
       <DragandDrop/>
       <FormValidation/>
       <Quiz/>
+      <CurrencyConverter/>
+      <FilterProducts/>
     </div>
   )
 }
