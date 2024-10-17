@@ -21,6 +21,7 @@ import Pagination from "./Components/Pagination";
 import Digitalclock from "./Components/Digital Clock/Digitalclock";
 import CountDown from "./Components/CountDown/CountDown";
 import MusicPlayer from "./Components/MusicPlayer/MusicPlayer";
+import ButtonRipple from "./Components/ButtonRippleEffect/ButtonRipple";
 
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
       <Digitalclock/>
       <CountDown/>
       <MusicPlayer/>
+      <ButtonRipple/>
     </div>
   )
 }

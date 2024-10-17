@@ -21,16 +21,22 @@ const MusicPlayer = () => {
     const [isPlaying,setisPlaying] = useState(false);
     const [progressPercent,setprogressPercent] = useState(0);
     const [currentTrack, setcurrentTrack] = useState(0);
+    //ref object for pointing interval
+    const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
 
     //i will use setinterval() for updating progress bar
     useEffect(() => {
         if(isPlaying){
-            const intervalId = setInterval(() => {
+             intervalRef.current = setInterval(() => {
                 const currentPosition = AudioRef.current?.currentTime || 0;
                 const duration = AudioRef.current?.duration || 0;
                 const progressPercent = (currentPosition / duration) * 100;
                 setprogressPercent(progressPercent);
             },1000)
+        }
+
+        return () => {
+            clearInterval(intervalRef.current);
         }
     },[isPlaying])
 
@@ -40,7 +46,7 @@ const MusicPlayer = () => {
         <h1 className="font-bold text-5xl mb-4">Your Own Music Player</h1>
 
         <div className=" h-52 w-52 rounded-full bg-slate-200 flex justify-center items-center">
-            <img className="h-48 w-48 rounded-full " src={`${tracks[currentTrack].image}`} alt="music-cover" />
+            <img className="h-48 w-48 rounded-full  object-cover " src={`${tracks[currentTrack].image}`} alt="music-cover" />
             {/* aur yaha me bina double or single quattion me src ka value likh raha tha jo ki galat hai as src allsways takes value in qutations */}
         </div>
 
@@ -56,8 +62,8 @@ const MusicPlayer = () => {
             <div style={{ width: `${progressPercent}%` }} className={`h-full  ${isPlaying ? 'bg-blue-500' : 'bg-red-500'} rounded-lg` }></div>
         </div>
 
-        <div>
-        <button disabled={currentTrack === 0} className={`w-24 h-12 rounded-full bg-slate-500 text-white hover:scale-95 ${isPlaying? 'opacity-50' : 'opacity-100'}`} onClick={() => setcurrentTrack((prev) => (prev - 1) % tracks.length)}>
+        <div className="flex gap-2">
+        <button  className={`w-24 h-12 rounded-full bg-slate-500 text-white hover:scale-95 ${isPlaying? 'opacity-50' : 'opacity-100'}`} onClick={() => setcurrentTrack((prev) => (prev - 1) % tracks.length)}>
                 prev
             </button>
 
@@ -102,7 +108,7 @@ const MusicPlayer = () => {
                 Forward
             </button>
 
-            <button disabled={currentTrack === tracks.length-1} className={`w-24 h-12 rounded-full bg-slate-500 text-white hover:scale-95 ${isPlaying? 'opacity-50' : 'opacity-100'}`} onClick={() => setcurrentTrack((prev) => (prev + 1) % tracks.length)}>
+            <button  className={`w-24 h-12 rounded-full bg-slate-500 text-white hover:scale-95 ${isPlaying? 'opacity-50' : 'opacity-100'}`} onClick={() => setcurrentTrack((prev) => (prev + 1) % tracks.length)}>
                 Next
             </button>
 
@@ -114,3 +120,9 @@ const MusicPlayer = () => {
 }
 
 export default MusicPlayer
+
+//while setting the width of the progress bar i was initaially trying :- w-[${progressPercent}%]
+
+//but this does not work as Tailwind does not support dynamic classes 
+
+// in tailwind we can have different classes on the basis of some condition but it cant process dynamic classes so later i used style property to set width
