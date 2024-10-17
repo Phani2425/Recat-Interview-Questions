@@ -20,6 +20,7 @@ import ScrollTOSection from "./Components/ScrollToPerticularSection/ScrollTOSect
 import Pagination from "./Components/Pagination";
 import Digitalclock from "./Components/Digital Clock/Digitalclock";
 import CountDown from "./Components/CountDown/CountDown";
+import MusicPlayer from "./Components/MusicPlayer/MusicPlayer";
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
       <Pagination/>
       <Digitalclock/>
       <CountDown/>
+      <MusicPlayer/>
     </div>
   )
 }
