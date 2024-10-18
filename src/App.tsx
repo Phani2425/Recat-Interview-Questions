@@ -28,6 +28,8 @@ import Quiz from "./Components/Quiz App/Quiz";
 import CurrencyConverter from "./Components/CurrencyConverter/CurrencyConverter";
 import FilterProducts from "./Components/FilterProducts/FilterProducts";
 import FileUpload from "./Components/FileUpload/FileUpload";
+import PdfViewer from "./Components/PDFviewer/PdfViewer";
+import RandomQuoteGenerator from "./Components/QuoteGenerator/QuoteGenerator";
 
 
 const App = () => {
@@ -64,6 +66,8 @@ const App = () => {
       <CurrencyConverter/>
       <FilterProducts/>
       <FileUpload/>
+      <PdfViewer/>
+      <RandomQuoteGenerator/>
     </div>
   )
 }

@@ -52,7 +52,7 @@ import {
     console.log(productDetails);
     return (
       <div className="pdf-viewer-container">
-        <h1>PDF Viewer</h1>
+        <h1 className="text-center font-bold text-5xl">PDF Viewer</h1>
         <ul>
           {products && products.length > 0
             ? products.map((productItem) => (
@@ -66,7 +66,7 @@ import {
             : null}
         </ul>
         <div className="pdf-viewer-page">
-          <PDFViewer style={{ width: "100%", height: "800px" }}>
+          <PDFViewer style={{ width: "100%", height: "700px" }}>
             <PdfViewComponent productDetails={productDetails} />
           </PDFViewer>
         </div>
