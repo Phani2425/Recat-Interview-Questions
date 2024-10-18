@@ -27,6 +27,7 @@ import FormValidation from "./Components/SimpleFormValidation/FormValidation";
 import Quiz from "./Components/Quiz App/Quiz";
 import CurrencyConverter from "./Components/CurrencyConverter/CurrencyConverter";
 import FilterProducts from "./Components/FilterProducts/FilterProducts";
+import FileUpload from "./Components/FileUpload/FileUpload";
 
 
 const App = () => {
@@ -62,6 +63,7 @@ const App = () => {
       <Quiz/>
       <CurrencyConverter/>
       <FilterProducts/>
+      <FileUpload/>
     </div>
   )
 }
