@@ -30,6 +30,7 @@ import FilterProducts from "./Components/FilterProducts/FilterProducts";
 import FileUpload from "./Components/FileUpload/FileUpload";
 import PdfViewer from "./Components/PDFviewer/PdfViewer";
 import RandomQuoteGenerator from "./Components/QuoteGenerator/QuoteGenerator";
+import FireBaseTodo from "./Components/FireBaseTodo/FireBaseTodo";
 
 
 const App = () => {
@@ -68,6 +69,7 @@ const App = () => {
       <FileUpload/>
       <PdfViewer/>
       <RandomQuoteGenerator/>
+      <FireBaseTodo/>
     </div>
   )
 }
