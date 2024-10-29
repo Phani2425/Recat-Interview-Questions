@@ -31,6 +31,7 @@ import FileUpload from "./Components/FileUpload/FileUpload";
 import PdfViewer from "./Components/PDFviewer/PdfViewer";
 import RandomQuoteGenerator from "./Components/QuoteGenerator/QuoteGenerator";
 import FireBaseTodo from "./Components/FireBaseTodo/FireBaseTodo";
+import MemoryGame from "./Components/MemoryGame/MemoryGame";
 
 
 const App = () => {
@@ -70,6 +71,7 @@ const App = () => {
       <PdfViewer/>
       <RandomQuoteGenerator/>
       <FireBaseTodo/>
+      <MemoryGame/>
     </div>
   )
 }
